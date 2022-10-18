@@ -1,0 +1,19 @@
+// ---- ---- reset ---- ---- //
+@import 'slick.scss';
+@import 'jquery.fancybox.scss';
+@import 'normalize.scss';
+@import 'myreset.scss';
+@import 'global.scss';
+
+// ---- ---- main ---- ---- //
+
+// ---- ---- header ---- ---- //
+.header {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+// ---- ---- media ---- ---- //
+@import 'media.scss';
