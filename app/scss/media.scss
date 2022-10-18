@@ -1,3 +1,12 @@
 // ---- ---- media ---- ---- //
-@media (max-width: 360px) {
+@media (max-width: 600px) {
+  .header__inner {
+    flex-direction: column;
+  }
+  .menu-btn {
+    // display: none;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+  }
 }
