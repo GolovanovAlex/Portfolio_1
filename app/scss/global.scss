@@ -103,6 +103,40 @@ body {
     text-transform: uppercase;
   }
 }
+// ---- ---- slick arrow ---- ---- //
+.slick-arrow {
+  position: absolute;
+  top: -40px;
+  cursor: pointer;
+  &__left {
+    right: 60px;
+  }
+  &__right {
+    right: 15px;
+  }
+}
+.slick-dots {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+
+  button {
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    background-color: $color_dark;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+  .slick-active button {
+    background-color: $color_accent;
+  }
+}
 // ---- ---- padding-margin ---- ---- //
 .project {
   padding: 100px 0 0;
