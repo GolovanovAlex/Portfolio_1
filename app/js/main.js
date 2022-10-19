@@ -4,8 +4,9 @@ const btnMenu = document.querySelector('.menu-btn');
 btnMenu.addEventListener('click', () => {
   btnMenu.classList.toggle('menu-btn--active');
 });
-
+// ---- ---- JQuery ---- ---- //
 $(function () {
+  // ---- ---- slick-slider ---- ---- //
   $('.project__box').slick({
     infinite: true,
     slidesToShow: 2,

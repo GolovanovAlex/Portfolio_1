@@ -75,29 +75,21 @@
   &__card-box {
     position: relative;
     margin-bottom: 20px;
-    &:hover .project__card--back {
+    &:hover .project__back {
       transform: translateY(0);
     }
   }
-  &__card {
+  &__back {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-200%);
     overflow: hidden;
     transition: all 0.7s ease;
-
-    &--front {
-    }
-    &--back {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      transform: translateY(-200%);
-    }
   }
   &__img-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 5px;
   }
   &__img {
@@ -134,7 +126,9 @@
       }
     }
   }
-
+  &__item-info {
+    padding: 0 15px 10px;
+  }
   &__descr {
     margin-bottom: 10px;
   }
@@ -142,7 +136,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     color: $color_accent;
   }
   &__link-demo {
