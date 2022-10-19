@@ -79,10 +79,10 @@
     box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
     perspective: 150rem;
     &:hover .project__card--front {
-      // transform: rotateY(-180deg);
+      transform: rotateY(-180deg);
     }
     &:hover .project__card--back {
-      // transform: rotateY(0);
+      transform: rotateY(0);
     }
   }
   &__card-box {
@@ -119,11 +119,17 @@
     max-width: 450px;
   }
   &__skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   &__skill {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    text-align: center;
   }
-  &__skill-img {
-  }
+
   &__descr {
     margin-bottom: 10px;
   }
