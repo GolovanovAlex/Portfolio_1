@@ -62,13 +62,15 @@
   &__title {
   }
   &__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
   &__item {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 490px;
     padding: 25px;
     background: linear-gradient(
       160deg,
@@ -78,18 +80,18 @@
     border-radius: 10px;
     box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
     perspective: 150rem;
-    &:hover .project__card--front {
-      transform: rotateY(-180deg);
-    }
-    &:hover .project__card--back {
-      transform: rotateY(0);
-    }
   }
   &__card-box {
     position: relative;
     width: 100%;
     height: 260px;
     margin-bottom: 15px;
+    &:hover .project__card--front {
+      transform: rotateY(-180deg);
+    }
+    &:hover .project__card--back {
+      transform: rotateY(0);
+    }
   }
   &__card {
     position: absolute;
@@ -100,13 +102,12 @@
     overflow: hidden;
     backface-visibility: hidden;
     transition: all 0.7s ease;
-    transform: rotateY(180deg);
+    transform: rotateY(0deg);
 
     &--front {
     }
     &--back {
-      transform: rotateY(0deg);
-      // transform: rotateY(180deg);
+      transform: rotateY(180deg);
     }
   }
   &--front {
@@ -116,18 +117,41 @@
   &__img-box {
   }
   &__img {
-    max-width: 450px;
+    margin-top: 5px;
+    width: 100%;
+    img {
+    }
   }
   &__skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 25px 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: rgba(242, 243, 241, 0.7);
   }
   &__skill {
-    width: 40px;
-    height: 40px;
-    margin: 5px;
     text-align: center;
+    justify-self: center;
+    svg {
+      width: 40px;
+      fill: $color_dark;
+    }
+    span {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 16px;
+    }
+    &:hover {
+      svg {
+        fill: $color_accent;
+      }
+    }
   }
 
   &__descr {
