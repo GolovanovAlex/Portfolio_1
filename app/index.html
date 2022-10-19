@@ -92,7 +92,7 @@
   <body>
     <header
       class="header"
-      style="background-image: url(images/bg/bg_header.jpg)"
+      style="background-image: url(images/bg/bg_header.webp)"
     >
       <div class="container">
         <div class="header__inner">
@@ -107,24 +107,50 @@
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link" href="#">About Me</a>
-              </li>
-              <li class="menu__item">
                 <a class="menu__link" href="#">Project</a>
               </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">About Me</a>
+              </li>
+
               <li class="menu__item">
                 <a class="menu__link" href="#">Contacts</a>
               </li>
             </ul>
           </nav>
+          <div class="contact">
+            <ul class="contact__list">
+              <li class="contact__item">
+                <a class="contact__link" href="#">
+                  <svg
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="red"
+                  >
+                    <path
+                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="contact__item">
+                <a class="contact__link" href="#"></a>
+              </li>
+              <li class="contact__item">
+                <a class="contact__link" href="#"></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="header__clouds-box">
+      <!-- <div class="header__clouds-box">
         <img
           class="header__cloud"
           src="images/bg/cloud1.png"
           alt="cloud"
-          style="--i: 1"
+          style="--i: 2"
         />
         <img
           class="header__cloud"
@@ -156,8 +182,100 @@
           alt="cloud"
           style="--i: 6"
         />
-      </div>
+        <img
+          class="header__cloud"
+          src="images/bg/cloud5.png"
+          alt="cloud"
+          style="--i: 7"
+        />
+      </div> -->
     </header>
+    <section class="project">
+      <div class="container">
+        <div class="project__top">
+          <h2 class="title title__h2 project__title">Projects</h2>
+        </div>
+        <div class="project__box">
+          <div class="project__item">
+            <div class="project__card-box">
+              <div class="project__card project__card--front">
+                <div class="project__img-box">
+                  <img
+                    class="project__img"
+                    src="images/content/project_01.png"
+                    alt="project"
+                  />
+                </div>
+              </div>
+              <div class="project__card project__card--back">
+                <div class="project__img-box">
+                  <img src="images/content/spacemob.gi" alt="" />
+                </div>
+                <ul class="project__skills">
+                  <li class="project__skill">
+                    <img class="project__skill-img" src="" alt="" />
+                  </li>
+                  <li class="project__skill">
+                    <img class="project__skill-img" src="" alt="" />
+                  </li>
+                  <li class="project__skill">
+                    <img class="project__skill-img" src="" alt="" />
+                  </li>
+                  <li class="project__skill">
+                    <img class="project__skill-img" src="" alt="" />
+                  </li>
+                  <li class="project__skill">
+                    <svg
+                      width="32px"
+                      height="32px"
+                      viewBox="0 0 32 32"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="red"
+                    >
+                      <path
+                        d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z"
+                      />
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h4 class="project__title title__h4">Go Surf</h4>
+            <p class="project__descr">
+              Лендинг. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Ducimus at quaerat ratione? Reprehenderit, corrupti error! Quis
+              expedita quia consectetur provident!
+            </p>
+            <div class="project__links">
+              <a class="project__link-demo" href="#">Demo</a>
+              <a class="project__link-git" href="#"
+                ><svg
+                  width="32px"
+                  height="32px"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="red"
+                >
+                  <path
+                    d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <h2 class="title title__h2 about__title"></h2>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="container">
+        <h2 class="title title__h2 contacts__title"></h2>
+      </div>
+    </section>
     <script src="js/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>

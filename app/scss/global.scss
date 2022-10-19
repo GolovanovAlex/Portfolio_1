@@ -3,7 +3,8 @@
 // ---- ---- colors ---- ---- //
 $color_main: #ffffff;
 $color_accent: #0093a1;
-$color_light: #ffffff;
+$color_light: #f3f4f1;
+$color_bglight: #fefefe;
 $color_dark: #262c27;
 $color_hover: #b9c400;
 $color_text: #262c27;
@@ -15,10 +16,12 @@ body {
   line-height: 19px;
   min-width: 300px;
   overflow-x: hidden;
-  color: $color_accent;
+  color: $color_text;
+  background-color: $color_bglight;
 }
 .container {
-  max-width: 1220px;
+  padding: 0 15px;
+  max-width: 1230px;
   margin: 0 auto;
 }
 // ---- ---- menu ---- ---- //
@@ -43,13 +46,13 @@ body {
     margin-bottom: 5px;
     transition: all 0.5s ease;
   }
-  .menu-btn__line--one {
+  &__line--one {
     top: 10px;
   }
-  .menu-btn__line--two {
+  &__line--two {
     top: 20px;
   }
-  .menu-btn__line--three {
+  &__line--three {
     top: 30px;
   }
   &.menu-btn--active {
@@ -78,4 +81,29 @@ body {
     cursor: pointer;
     z-index: 20;
   }
+}
+// ---- ---- title ---- ---- //
+.title {
+  &__h1 {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 34px;
+  }
+  &__h2 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 100px;
+  }
+  &__h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+}
+// ---- ---- padding-margin ---- ---- //
+.project {
+  padding: 100px 0 0;
 }

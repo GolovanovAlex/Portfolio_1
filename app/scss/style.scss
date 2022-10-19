@@ -15,6 +15,8 @@
   background-repeat: no-repeat;
   width: 100%;
   min-height: 100vh;
+  &__title {
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -26,13 +28,13 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 101%;
     overflow: hidden;
   }
   &__cloud {
     position: absolute;
-    bottom: 0;
-    max-width: 200%;
+    bottom: 0px;
+    max-width: 100%;
     animation: clouds calc(9s * var(--i)) linear infinite;
   }
 }
@@ -44,9 +46,108 @@
     transform: translateX(110%);
   }
 }
-.title {
-  &__h1 {
-    font-size: 40px;
+.contact {
+  &__list {
+  }
+  &__item {
+  }
+  &__link {
+  }
+}
+// ---- ---- project ---- ---- //
+.project {
+  min-height: 100vh;
+  &__top {
+  }
+  &__title {
+  }
+  &__box {
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 500px;
+    padding: 25px;
+    background: linear-gradient(
+      160deg,
+      rgba(243, 244, 241, 1) 0%,
+      rgb(232, 232, 237) 100%
+    );
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    perspective: 150rem;
+    &:hover .project__card--front {
+      // transform: rotateY(-180deg);
+    }
+    &:hover .project__card--back {
+      // transform: rotateY(0);
+    }
+  }
+  &__card-box {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    margin-bottom: 15px;
+  }
+  &__card {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transition: all 0.7s ease;
+    transform: rotateY(180deg);
+
+    &--front {
+    }
+    &--back {
+      transform: rotateY(0deg);
+      // transform: rotateY(180deg);
+    }
+  }
+  &--front {
+  }
+  &--back {
+  }
+  &__img-box {
+  }
+  &__img {
+    max-width: 450px;
+  }
+  &__skills {
+  }
+  &__skill {
+  }
+  &__skill-img {
+  }
+  &__descr {
+    margin-bottom: 10px;
+  }
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: $color_accent;
+  }
+  &__link-demo {
+  }
+  &__link-git {
+  }
+}
+
+// ---- ---- about ---- ---- //
+.about {
+  &__title {
+  }
+}
+// ---- ---- contacts ---- ---- //
+.contacts {
+  &__title {
   }
 }
 // ---- ---- media ---- ---- //
