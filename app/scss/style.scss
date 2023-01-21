@@ -5,7 +5,7 @@
 @import 'myreset.scss';
 @import 'global.scss';
 
-// ---- ---- header ---- ---- //
+// ---- ---- Header ---- ---- //
 .header {
   position: relative;
   background-position: center;
@@ -13,8 +13,6 @@
   background-repeat: no-repeat;
   width: 100%;
   min-height: 100vh;
-  &__title {
-  }
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -28,6 +26,7 @@
     width: 100%;
     height: 101%;
     overflow: hidden;
+    user-select: none;
   }
   &__cloud {
     position: absolute;
@@ -44,6 +43,7 @@
     transform: translateX(110%);
   }
 }
+// ---- ---- Contacts Header ---- ---- //
 .contact {
   &__list {
   }
@@ -52,14 +52,43 @@
   &__link {
   }
 }
-// ---- ---- project ---- ---- //
+// ---- ---- Cloud Tags ---- ---- //
+.tags {
+  position: absolute;
+  top: calc(50% - 30vmin);
+  left: calc(50% - 30vmin);
+  height: 60vmin;
+  width: 60vmin;
+  opacity: 0;
+  user-select: none;
+}
+.tags.-loaded {
+  animation: fadeIn 1s ease-out forwards;
+}
+.tags .tag {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 5vmin;
+  font-weight: bold;
+  transition: transform 0.5s linear, opacity 0.5s linear;
+}
+.tag > .tag__box {
+  display: inline-block;
+  transform: translateX(-50%) translateY(-50%);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+// ---- ---- Projects ---- ---- //
 .project {
-  min-height: 100vh;
-  &__top {
-  }
-  &__title {
-  }
   &__box {
+    margin-bottom: 100px;
   }
   &__item {
     padding: 5px;
@@ -110,20 +139,16 @@
   &__skill {
     text-align: center;
     justify-self: center;
-    svg {
+
+    img {
+      display: inline-block;
       width: 40px;
-      fill: $color_dark;
     }
     span {
       display: block;
       font-size: 12px;
       font-weight: 700;
       line-height: 16px;
-    }
-    &:hover {
-      svg {
-        fill: $color_accent;
-      }
     }
   }
   &__item-info {
@@ -139,8 +164,88 @@
     color: $color_accent;
   }
   &__link-demo {
+    &:hover {
+      text-decoration: underline;
+    }
   }
   &__link-git {
+    &:hover {
+      svg {
+        fill: $color_accent;
+      }
+    }
+  }
+  &__waves-box {
+    width: 100%;
+  }
+  &__more-text {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 20px;
+  }
+  &__more-link {
+    display: inline-block;
+    background-color: $color_dark;
+    margin-bottom: 25px;
+    svg {
+      width: 187px;
+      height: 45px;
+    }
+    &:hover {
+      background-color: $color_accent;
+      svg {
+        rect {
+          fill: $color_accent;
+        }
+      }
+    }
+    & + & {
+      margin-left: 45px;
+    }
+  }
+}
+.fancy_image {
+  cursor: zoom-in;
+}
+// ---- ---- Projects Waves ---- ---- //
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -107px;
+  min-height: 50px;
+  max-height: 100px;
+}
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+.parallax > use:nth-child(5) {
+  animation-delay: -6s;
+  animation-duration: 23s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
   }
 }
 
@@ -152,6 +257,16 @@
 // ---- ---- contacts ---- ---- //
 .contacts {
   &__title {
+  }
+  &__text {
+  }
+  &__box {
+  }
+  &__items {
+  }
+  &__item {
+  }
+  &__link {
   }
 }
 // ---- ---- media ---- ---- //
