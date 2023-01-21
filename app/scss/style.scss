@@ -43,15 +43,7 @@
     transform: translateX(110%);
   }
 }
-// ---- ---- Contacts Header ---- ---- //
-.contact {
-  &__list {
-  }
-  &__item {
-  }
-  &__link {
-  }
-}
+
 // ---- ---- Cloud Tags ---- ---- //
 .tags {
   position: absolute;
@@ -72,6 +64,7 @@
   font-size: 5vmin;
   font-weight: bold;
   transition: transform 0.5s linear, opacity 0.5s linear;
+  animation: colorChange 20s infinite;
 }
 .tag > .tag__box {
   display: inline-block;
@@ -79,10 +72,20 @@
 }
 @keyframes fadeIn {
   from {
+    color: $color_accent;
     opacity: 0;
   }
   to {
     opacity: 1;
+  }
+}
+@keyframes colorChange {
+  0%,
+  100% {
+    color: $color_dark;
+  }
+  50% {
+    color: $color_accent;
   }
 }
 // ---- ---- Projects ---- ---- //
@@ -169,6 +172,10 @@
     }
   }
   &__link-git {
+    svg {
+      transition: fill 0.3s ease;
+    }
+
     &:hover {
       svg {
         fill: $color_accent;
@@ -179,17 +186,22 @@
     width: 100%;
   }
   &__more-text {
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 20px;
+    line-height: 25px;
     margin-bottom: 20px;
   }
   &__more-link {
     display: inline-block;
     background-color: $color_dark;
     margin-bottom: 25px;
+    transition: background-color 0.3s ease;
+
     svg {
-      width: 187px;
+      width: 150px;
       height: 45px;
+      rect {
+        transition: fill 0.3s ease;
+      }
     }
     &:hover {
       background-color: $color_accent;
@@ -257,17 +269,45 @@
 // ---- ---- contacts ---- ---- //
 .contacts {
   &__title {
+    margin-bottom: 50px;
   }
   &__text {
+    max-width: 400px;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 25px;
   }
   &__box {
   }
   &__items {
+    display: flex;
+    align-items: center;
+    gap: 0 25px;
   }
-  &__item {
-  }
+
   &__link {
+    svg {
+      width: 45px;
+      height: 45px;
+      transition: fill 0.3s ease;
+    }
+    &:hover {
+      svg {
+        fill: $color_accent;
+      }
+    }
   }
+}
+// ---- ---- footer ---- ---- //
+.footer {
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $color_accent;
+  }
+  padding: 50px 0 25px;
+  text-align: center;
 }
 // ---- ---- media ---- ---- //
 @import 'media.scss';
