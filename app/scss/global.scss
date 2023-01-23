@@ -1,6 +1,6 @@
-// ---- ---- fonts ---- ---- //
+// ---- ---- Fonts ---- ---- //
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
-// ---- ---- colors ---- ---- //
+// ---- ---- Colors ---- ---- //
 $color_main: #ffffff;
 $color_accent: #0093a1;
 $color_light: #f3f4f1;
@@ -24,7 +24,7 @@ body {
   max-width: 1230px;
   margin: 0 auto;
 }
-// ---- ---- menu ---- ---- //
+// ---- ---- Menu ---- ---- //
 .menu-btn {
   display: none;
   position: absolute;
@@ -86,7 +86,7 @@ body {
     }
   }
 }
-// ---- ---- title ---- ---- //
+// ---- ---- Title ---- ---- //
 .title {
   &__h1 {
     font-size: 40px;
