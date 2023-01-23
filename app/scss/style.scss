@@ -269,9 +269,25 @@
   }
 }
 
-// ---- ---- about ---- ---- //
+// ---- ---- About Me---- ---- //
 .about {
   &__title {
+  }
+}
+// ---- ---- Skills ---- ---- //
+
+.skill {
+  text-align: center;
+  justify-self: center;
+  &__img {
+    display: inline-block;
+    width: 40px;
+  }
+  &__name {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
   }
 }
 // ---- ---- contacts ---- ---- //
