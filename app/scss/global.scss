@@ -107,7 +107,16 @@ body {
     text-transform: uppercase;
   }
 }
-// ---- ---- slick arrow ---- ---- //
+// ---- ---- slick slider ---- ---- //
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  display: flex;
+  padding-bottom: 10px;
+}
+.slick-initialized .slick-slide {
+  display: flex;
+  flex-direction: column;
+}
 .slick-arrow {
   position: absolute;
   top: -40px;
