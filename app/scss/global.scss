@@ -97,7 +97,7 @@ body {
     font-size: 40px;
     font-weight: 700;
     line-height: 40px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
   &__h4 {
     font-size: 24px;
@@ -107,7 +107,7 @@ body {
     text-transform: uppercase;
   }
 }
-// ---- ---- slick slider ---- ---- //
+// ---- ---- Slick Slider ---- ---- //
 .slick-slider .slick-track,
 .slick-slider .slick-list {
   display: flex;
@@ -153,10 +153,10 @@ body {
     background-color: $color_accent;
   }
 }
-// ---- ---- padding-margin ---- ---- //
+// ---- ---- Padding-Margin ---- ---- //
 .project,
 .contacts {
-  padding-top: 100px;
+  padding-top: 75px;
 }
 .about {
   padding-top: 150px;

@@ -43,7 +43,6 @@
     transform: translateX(110%);
   }
 }
-
 // ---- ---- Cloud Tags ---- ---- //
 .tags {
   position: absolute;
@@ -91,7 +90,7 @@
 // ---- ---- Projects ---- ---- //
 .project {
   &__box {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
   &__item {
     padding: 5px;
@@ -197,7 +196,6 @@
   &__more-link {
     display: inline-block;
     background-color: $color_dark;
-    margin-bottom: 25px;
     transition: background-color 0.3s ease;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 
@@ -236,6 +234,9 @@
   min-height: 50px;
   max-height: 100px;
 }
+.waves__about {
+  margin-bottom: -65px;
+}
 .parallax > use {
   animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
@@ -259,7 +260,6 @@
   animation-delay: -6s;
   animation-duration: 23s;
 }
-
 @keyframes move-forever {
   0% {
     transform: translate3d(-90px, 0, 0);
@@ -268,11 +268,23 @@
     transform: translate3d(85px, 0, 0);
   }
 }
-
 // ---- ---- About Me---- ---- //
 .about {
-  &__title {
+  &__waves {
+    transform: rotate(180deg);
   }
+  &__box {
+    display: flex;
+  }
+  &__inner {
+    max-width: 575px;
+    margin-right: 40px;
+  }
+  &__text {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
   &__skill-text {
     font-size: 20px;
     font-weight: 600;
@@ -281,19 +293,19 @@
   }
 }
 // ---- ---- Skills ---- ---- //
-
 .skill {
   &__box {
-    max-width: 300px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    align-items: center;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 50px 30px;
   }
   text-align: center;
   justify-self: center;
   &__img {
     display: inline-block;
-    width: 40px;
+    width: 50px;
+    transition: fill 0.3s ease, color 0.3s ease, transform 0.3s ease;
   }
   &__name {
     display: block;
@@ -305,10 +317,11 @@
     color: $color_accent;
     svg {
       fill: $color_accent;
+      transform: scale(1.1);
     }
   }
 }
-// ---- ---- contacts ---- ---- //
+// ---- ---- Contacts ---- ---- //
 .contacts {
   &__title {
     margin-bottom: 50px;
@@ -366,7 +379,7 @@
   transition: transform 0.5s linear;
   transform: translateY(0%);
 }
-// ---- ---- footer ---- ---- //
+// ---- ---- Footer ---- ---- //
 .footer {
   &__box {
     display: flex;
@@ -374,7 +387,7 @@
     align-items: center;
     color: $color_accent;
   }
-  padding: 50px 0 25px;
+  padding: 25px 0;
   text-align: center;
 }
 .footer__heart.footer__heart--active {
@@ -390,5 +403,5 @@
     transform: scale(1.5);
   }
 }
-// ---- ---- media ---- ---- //
+// ---- ---- Media ---- ---- //
 @import 'media.scss';
