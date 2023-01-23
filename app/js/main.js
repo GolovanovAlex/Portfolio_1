@@ -4,6 +4,12 @@ const btnMenu = document.querySelector('.menu-btn');
 btnMenu.addEventListener('click', () => {
   btnMenu.classList.toggle('menu-btn--active');
 });
+const hearts = document.querySelector('.footer__made');
+const heart = document.querySelector('.footer__heart');
+
+hearts.addEventListener('click', () => {
+  heart.classList.toggle('footer__heart--active');
+});
 // ---- ---- JQuery ---- ---- //
 $(function () {
   // ---- ---- slick-slider ---- ---- //

@@ -343,5 +343,18 @@
   padding: 50px 0 25px;
   text-align: center;
 }
+.footer__heart.footer__heart--active {
+  display: inline-block;
+  animation: heart 5s linear infinite;
+}
+@keyframes heart {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
 // ---- ---- media ---- ---- //
 @import 'media.scss';
