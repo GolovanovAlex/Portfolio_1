@@ -277,6 +277,12 @@
 // ---- ---- Skills ---- ---- //
 
 .skill {
+  &__box {
+    max-width: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
   text-align: center;
   justify-self: center;
   &__img {
@@ -288,6 +294,12 @@
     font-size: 12px;
     font-weight: 700;
     line-height: 16px;
+  }
+  &:hover {
+    color: $color_accent;
+    svg {
+      fill: $color_accent;
+    }
   }
 }
 // ---- ---- contacts ---- ---- //
