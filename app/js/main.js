@@ -1,3 +1,7 @@
+// ---- ---- Preloader ---- ---- //
+window.onload = function () {
+  document.querySelector('.preloader').classList.add('preloader-remove');
+};
 // ---- ---- Menu BTN on Click ---- ---- //
 const btnMenu = document.querySelector('.menu-btn');
 
