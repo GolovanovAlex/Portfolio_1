@@ -1,4 +1,4 @@
-// ---- ---- menu btn on click ---- ---- //
+// ---- ---- Menu BTN on Click ---- ---- //
 const btnMenu = document.querySelector('.menu-btn');
 
 btnMenu.addEventListener('click', () => {
@@ -12,7 +12,7 @@ hearts.addEventListener('click', () => {
 });
 // ---- ---- JQuery ---- ---- //
 $(function () {
-  // ---- ---- slick-slider ---- ---- //
+  // ---- ---- Slick Slider ---- ---- //
   $('.project__box').slick({
     infinite: true,
     slidesToShow: 2,
@@ -30,6 +30,14 @@ $(function () {
     $('a.fancy_image').fancybox({
       width: '1200px',
     });
+  });
+
+  // ---- ---- Scroll Smooth ---- ---- //
+  $('.menu').on('click', 'a', function (event) {
+    event.preventDefault();
+    let id = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({ scrollTop: top }, 1200);
   });
 });
 
