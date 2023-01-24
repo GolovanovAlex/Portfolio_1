@@ -283,8 +283,11 @@
   &__text {
     font-size: 20px;
     line-height: 25px;
+    margin-bottom: 20px;
   }
-
+  &__text-color {
+    color: $color_accent;
+  }
   &__skill-text {
     font-size: 20px;
     font-weight: 600;
