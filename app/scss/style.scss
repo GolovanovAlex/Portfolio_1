@@ -279,6 +279,9 @@
   &__inner {
     max-width: 575px;
     margin-right: 40px;
+    &:hover .about__text-hover {
+      color: $color_accent;
+    }
   }
   &__text {
     font-size: 20px;
@@ -287,6 +290,9 @@
   }
   &__text-color {
     color: $color_accent;
+  }
+  &__text-hover {
+    transition: color 0.3s ease;
   }
   &__skill-text {
     font-size: 20px;

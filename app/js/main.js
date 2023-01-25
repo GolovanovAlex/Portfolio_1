@@ -112,6 +112,7 @@ class TagsCloud {
   #initEventListeners() {
     window.addEventListener('resize', this.#updatePositions.bind(this));
     document.addEventListener('mousemove', this.#onMouseMove.bind(this));
+    document.addEventListener('touchmove', this.#onMouseMove.bind(this));
   }
 
   #updatePositions() {

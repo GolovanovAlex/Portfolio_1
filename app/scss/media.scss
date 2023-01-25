@@ -10,6 +10,9 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 30px;
   }
+  .skill__bootstrap {
+    display: none;
+  }
 }
 @media (max-width: 900px) {
   .project__skills {
@@ -32,6 +35,9 @@
   .skill__box {
     grid-template-columns: repeat(3, 1fr);
   }
+  .skill__bootstrap {
+    display: block;
+  }
 }
 @media (max-width: 700px) {
   .title__h4 {
@@ -51,6 +57,9 @@
   .title__h2 {
     font-size: 36px;
   }
+  .header__cloud {
+    max-width: 400%;
+  }
   .header__inner {
     flex-direction: column;
     padding-top: 45px;
@@ -64,6 +73,10 @@
       height: 10px;
       margin-left: 7px;
     }
+  }
+  .project,
+  .contacts {
+    padding-top: 45px;
   }
   .project__more-text {
     text-align: center;
@@ -83,6 +96,9 @@
   }
   .skill__box {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .skill__bootstrap {
+    display: none;
   }
 }
 @media (max-width: 480px) {
@@ -129,6 +145,13 @@
   }
   .contacts__text {
     font-size: 18px;
+    text-align: center;
+  }
+  .contacts__items {
+    justify-content: space-evenly;
+  }
+  .contacts__item-text {
+    text-align: center;
   }
   .footer__made,
   .footer__text {
@@ -142,5 +165,8 @@
   .skill__box {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+  }
+  .skill__bootstrap {
+    display: block;
   }
 }
