@@ -185,12 +185,12 @@ class TagsCloud {
   }
   #onTouchMove(e) {
     const rootRect = this.#root.getBoundingClientRect();
-    const deltaX = e.clientX - (rootRect.left + this.#root.offsetWidth / 2);
-    const deltaY = e.clientY - (rootRect.top + this.#root.offsetHeight / 2);
+    const deltaX = e.clientX - (rootRect.left + this.#root.offsetWidth / 1);
+    const deltaY = e.clientY - (rootRect.top + this.#root.offsetHeight / 1);
     const a = Math.atan2(deltaX, deltaY) - Math.PI / 2;
     const axis = [Math.sin(a), Math.cos(a), 0];
     const delta = Math.sqrt(deltaX ** 2 + deltaY ** 2);
-    const speed = delta / Math.max(window.innerHeight, window.innerWidth) / 30;
+    const speed = delta / Math.max(window.innerHeight, window.innerWidth) / 10;
 
     this.#rotationAxis = axis;
     this.#rotationSpeed = speed;
