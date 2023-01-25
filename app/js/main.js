@@ -112,7 +112,7 @@ class TagsCloud {
   #initEventListeners() {
     window.addEventListener('resize', this.#updatePositions.bind(this));
     document.addEventListener('mousemove', this.#onMouseMove.bind(this));
-    document.addEventListener('pointermove', this.#onMouseMove.bind(this));
+    document.addEventListener('pointermove', this.#onTouchMove.bind(this));
   }
 
   #updatePositions() {
@@ -172,6 +172,18 @@ class TagsCloud {
   }
 
   #onMouseMove(e) {
+    const rootRect = this.#root.getBoundingClientRect();
+    const deltaX = e.clientX - (rootRect.left + this.#root.offsetWidth / 2);
+    const deltaY = e.clientY - (rootRect.top + this.#root.offsetHeight / 2);
+    const a = Math.atan2(deltaX, deltaY) - Math.PI / 2;
+    const axis = [Math.sin(a), Math.cos(a), 0];
+    const delta = Math.sqrt(deltaX ** 2 + deltaY ** 2);
+    const speed = delta / Math.max(window.innerHeight, window.innerWidth) / 30;
+
+    this.#rotationAxis = axis;
+    this.#rotationSpeed = speed;
+  }
+  #onTouchMove(e) {
     const rootRect = this.#root.getBoundingClientRect();
     const deltaX = e.clientX - (rootRect.left + this.#root.offsetWidth / 2);
     const deltaY = e.clientY - (rootRect.top + this.#root.offsetHeight / 2);
