@@ -1,4 +1,4 @@
-// ---- ---- reset ---- ---- //
+// ---- ----  ---- ---- //
 @import 'slick.scss';
 @import 'jquery.fancybox.scss';
 @import 'normalize.scss';
@@ -283,7 +283,6 @@
   &__photo {
     width: 100%;
     border-radius: 6px;
-    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
     mix-blend-mode: luminosity;
   }
   &__photo-box {
@@ -518,6 +517,5 @@
     opacity: 0;
   }
 }
-
 // ---- ---- Media ---- ---- //
 @import 'media.scss';
