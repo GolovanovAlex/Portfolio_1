@@ -274,10 +274,25 @@
   }
   &__box {
     display: flex;
+    align-items: center;
+  }
+  &__photo-box {
+    padding: 20px;
+    margin: 0;
+    background: linear-gradient(
+      160deg,
+      rgba(243, 244, 241, 1) 0%,
+      rgb(232, 232, 237) 100%
+    );
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  }
+  &__photo {
+    width: 100%;
+    border-radius: 6px;
   }
   &__inner {
-    max-width: 575px;
-    margin-right: 40px;
+    margin-left: 50px;
     &:hover .about__text-hover {
       color: $color_accent;
     }
@@ -297,7 +312,7 @@
     font-size: 20px;
     font-weight: 600;
     line-height: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
   }
 }
 // ---- ---- Skills ---- ---- //

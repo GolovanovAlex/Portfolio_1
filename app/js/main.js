@@ -2,12 +2,7 @@
 window.onload = function () {
   document.querySelector('.preloader').classList.add('preloader-remove');
 };
-// ---- ---- Menu BTN on Click ---- ---- //
-const btnMenu = document.querySelector('.menu-btn');
-
-btnMenu.addEventListener('click', () => {
-  btnMenu.classList.toggle('menu-btn--active');
-});
+// ---- ---- Hearts on Click ---- ---- //
 const hearts = document.querySelector('.footer__made');
 const heart = document.querySelector('.footer__heart');
 
